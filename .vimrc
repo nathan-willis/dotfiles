@@ -118,6 +118,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'
+" Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -143,4 +145,13 @@ nnoremap <F5> :call CycleThemes()<CR>
 " --------------------------
 nmap <C-n> :NERDTreeToggle<CR>  " Ctrl+n toggles the file tree
 
+" Use Tab for completion
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ "\<TAB>"
+inoremap <silent><expr> <S-TAB>
+      \ pumvisible() ? "\<C-p>" :
+      \ "\<S-TAB>"
 
+" Use <CR> to confirm selection
+inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
