@@ -118,8 +118,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'
-" Autocompletion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Yggdroot/indentLine'
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion
 
 call plug#end()
 
