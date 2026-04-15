@@ -155,3 +155,10 @@ inoremap <silent><expr> <S-TAB>
 
 " Use <CR> to confirm selection
 inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
+
+" Set clipboard to MacOS clipboard.
+" if has('clipboard')
+  " set clipboard=unnamedplus
+" endif
+
+" autocmd VimEnter * set clipboard=unnamedplus
